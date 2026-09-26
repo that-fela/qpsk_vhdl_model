@@ -692,3 +692,2289 @@ do qpsk.do
 # wave zoom full
 # 0 ps
 # 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:51:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# ** Warning: ../rtl/qpsk_demodulator.vhd(107): (vcom-1246) Range 17 downto 18 is null.
+# ** Error: ../rtl/qpsk_demodulator.vhd(108): near ">": syntax error
+# ** Warning: ../rtl/qpsk_demodulator.vhd(109): (vcom-1246) Range 17 downto 18 is null.
+# ** Error: ../rtl/qpsk_demodulator.vhd(110): near ">": syntax error
+# ** Warning: ../rtl/qpsk_demodulator.vhd(115): (vcom-1246) Range 17 downto 18 is null.
+# ** Error: ../rtl/qpsk_demodulator.vhd(116): near ">": syntax error
+# ** Warning: ../rtl/qpsk_demodulator.vhd(117): (vcom-1246) Range 17 downto 18 is null.
+# ** Error: ../rtl/qpsk_demodulator.vhd(118): near ">": syntax error
+# ** Note: ../rtl/qpsk_demodulator.vhd(162): VHDL Compiler exiting
+# End time: 08:51:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 4
+# ** Error: /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./qpsk.do line 14
+# /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -2008 ../rtl/qpsk_demodulator.vhd"
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:52:25 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:25 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:52:26 on Sep 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:52:26 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# ** Error: (vcom-11) Could not find work.qpsk_system.
+# ** Error (suppressible): ../tb/tb_qpsk_system.vhd(44): (vcom-1195) Cannot find expanded name "work.qpsk_system".
+# ** Error: ../tb/tb_qpsk_system.vhd(44): Unknown expanded name.
+# ** Note: ../tb/tb_qpsk_system.vhd(142): VHDL Compiler exiting
+# End time: 08:52:26 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# ** Error: /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./qpsk.do line 16
+# /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -2008 ../tb/tb_qpsk_system.vhd"
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:18 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:54:18 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:18 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:54:18 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:18 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:54:18 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:18 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:54:18 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:54:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:54:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 08:54:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:54:19 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 08:54:19 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 08:54:19 on Sep 27,2026, Elapsed time: 0:10:48
+# Errors: 2, Warnings: 0
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 08:54:19 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:55:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:55:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:52 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:52 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:52 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:52 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:55:52 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 08:55:52 on Sep 27,2026, Elapsed time: 0:01:33
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 08:55:52 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:57:51 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 08:57:51 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 08:57:52 on Sep 27,2026, Elapsed time: 0:02:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 08:57:52 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:58:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 08:58:06 on Sep 27,2026, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 08:58:06 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:20 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# ** Error: ../rtl/qpsk_demodulator.vhd(115): near "<=": syntax error
+# ** Note: ../rtl/qpsk_demodulator.vhd(166): VHDL Compiler exiting
+# End time: 09:00:20 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+# Error in macro ./qpsk.do line 14
+# /home/work/intelFPGA/20.1/modelsim_ase/linuxaloem/vcom failed.
+#     while executing
+# "vcom -2008 ../rtl/qpsk_demodulator.vhd"
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:00:30 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:00:30 on Sep 27,2026, Elapsed time: 0:02:24
+# Errors: 1, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:00:30 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:01:27 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:01:27 on Sep 27,2026, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:01:27 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:02:04 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:02:04 on Sep 27,2026, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:02:04 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_qpsk_system/dut/demodulator
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:07:45 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:07:45 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:07:45 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:07:45 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:07:45 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:45 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:07:46 on Sep 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:46 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:07:46 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:07:46 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:07:46 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:07:46 on Sep 27,2026, Elapsed time: 0:05:42
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:07:46 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:06 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:07 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:10:07 on Sep 27,2026, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:10:07 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# ** Failure: QPSK symbol decision error
+#    Time: 8615 ns  Iteration: 0  Process: /tb_qpsk_system/capture File: ../tb/tb_qpsk_system.vhd
+# Break in Process capture at ../tb/tb_qpsk_system.vhd line 139
+# 
+# wave zoom full
+# 0 ps
+# 9045750 ps
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:10:39 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:10:39 on Sep 27,2026, Elapsed time: 0:00:32
+# Errors: 1, Warnings: 0
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:10:39 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# 
+# wave zoom full
+# 0 ps
+# 105 us
+do qpsk.do
+# 
+# if {[file exists work]} {
+#     vdel -all
+# }
+# 
+# vlib work
+# 
+# vcom -2008 ../rtl/qpsk_pkg.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package qpsk_pkg
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/cosine_generator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/cosine_generator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity cosine_generator
+# -- Compiling architecture rtl of cosine_generator
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/low_pass_filter.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/low_pass_filter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity low_pass_filter
+# -- Compiling architecture rtl of low_pass_filter
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_modulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_modulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_modulator
+# -- Compiling architecture rtl of qpsk_modulator
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/simulated_channel.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/simulated_channel.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity simulated_channel
+# -- Compiling architecture rtl of simulated_channel
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_demodulator.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_demodulator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_demodulator
+# -- Compiling architecture rtl of qpsk_demodulator
+# -- Loading entity low_pass_filter
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../rtl/qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../rtl/qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package qpsk_pkg
+# -- Compiling entity qpsk_system
+# -- Compiling architecture rtl of qpsk_system
+# -- Loading entity cosine_generator
+# -- Loading entity qpsk_modulator
+# -- Loading entity simulated_channel
+# -- Loading entity qpsk_demodulator
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -2008 ../tb/tb_qpsk_system.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 09:11:58 on Sep 27,2026
+# vcom -reportprogress 300 -2008 ../tb/tb_qpsk_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ENV
+# -- Loading package qpsk_pkg
+# -- Compiling entity tb_qpsk_system
+# -- Compiling architecture sim of tb_qpsk_system
+# -- Loading entity qpsk_system
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc work.tb_qpsk_system
+# End time: 09:11:58 on Sep 27,2026, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_qpsk_system 
+# Start time: 09:11:58 on Sep 27,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.qpsk_pkg
+# Loading work.tb_qpsk_system(sim)
+# Loading work.qpsk_system(rtl)
+# Loading work.cosine_generator(rtl)
+# Loading work.qpsk_modulator(rtl)
+# Loading work.simulated_channel(rtl)
+# Loading work.qpsk_demodulator(rtl)
+# Loading work.low_pass_filter(rtl)
+# 
+# add wave -divider "CLOCK / CONTROL"
+# add wave sim:/tb_qpsk_system/clk
+# add wave sim:/tb_qpsk_system/reset
+# add wave sim:/tb_qpsk_system/sample_ce
+# 
+# add wave -divider "TRANSMITTER"
+# add wave -radix binary sim:/tb_qpsk_system/tx_bits_debug
+# add wave -radix binary sim:/tb_qpsk_system/tx_symbol_bits
+# add wave sim:/tb_qpsk_system/tx_symbol_valid
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_q
+# add wave -signed -radix decimal sim:/tb_qpsk_system/tx_rf
+# 
+# add wave -divider "CHANNEL"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_rf
+# 
+# add wave -divider "RECEIVER MIXER"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_mixed_q
+# 
+# add wave -divider "RECEIVER BASEBAND"
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_i
+# add wave -signed -radix decimal sim:/tb_qpsk_system/rx_q
+# 
+# add wave -divider "RECEIVED BITS"
+# add wave -radix binary sim:/tb_qpsk_system/rx_bits
+# add wave sim:/tb_qpsk_system/rx_bits_valid
+# 
+# configure wave -namecolwidth 220
+# configure wave -valuecolwidth 120
+# configure wave -timelineunits ns
+# 
+# run 0.1 ms
+# 
+# wave zoom full
+# 0 ps
+# 105 us

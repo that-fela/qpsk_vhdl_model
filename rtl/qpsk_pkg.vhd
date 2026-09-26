@@ -7,7 +7,7 @@ package qpsk_pkg is
     constant CLOCK_FREQUENCY_HZ : integer := 100_000_000;
     constant SAMPLE_RATE_HZ    : integer := 10_000_000;
     constant CARRIER_HZ        : integer := 2_000_000;
-    constant SYMBOL_RATE_HZ    : integer := 10_000;
+    constant SYMBOL_RATE_HZ    : integer := 100_000;
 
     constant SAMPLES_PER_SYMBOL : integer := SAMPLE_RATE_HZ / SYMBOL_RATE_HZ;
     constant SAMPLE_DIVIDER     : integer := CLOCK_FREQUENCY_HZ / SAMPLE_RATE_HZ;
