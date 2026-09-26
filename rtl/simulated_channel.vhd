@@ -15,6 +15,16 @@ entity simulated_channel is
 end entity;
 
 architecture rtl of simulated_channel is
+
+    -- Q1.15 scale: value * 2^15 (32768).
+    constant Q15_ONE : real := 2.0**15;
+
+    constant CHANNEL_GAIN_REAL    : real := 0.1;
+    constant NOISE_AMPLITUDE_REAL : real := 0.05;
+
+    constant CHANNEL_GAIN_Q15    : q15_t := to_signed(integer(CHANNEL_GAIN_REAL    * Q15_ONE), 16);
+    constant NOISE_AMPLITUDE_Q15 : q15_t := to_signed(integer(NOISE_AMPLITUDE_REAL * Q15_ONE), 16);
+
     signal lfsr : unsigned(15 downto 0) := x"ACE1";
 begin
 
@@ -39,12 +49,10 @@ begin
         variable noise_scaled  : signed(18 downto 0);
         variable channel_sum   : signed(18 downto 0);
     begin
-        -- Gain = 0.4 in Q1.15.
-        gain_product := tx_rf * to_signed(13107, 16);
+        gain_product := tx_rf * CHANNEL_GAIN_Q15;
         signal_scaled := resize(shift_right(gain_product, 15), 19);
 
-        -- Uniform pseudo-random noise with approximately +/-0.1 amplitude.
-        noise_product := signed(lfsr) * to_signed(3277, 16);
+        noise_product := signed(lfsr) * NOISE_AMPLITUDE_Q15;
         noise_scaled := resize(shift_right(noise_product, 15), 19);
 
         channel_sum := signal_scaled + noise_scaled;
