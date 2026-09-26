@@ -1,0 +1,357 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/work/dev/qpsk_vhdl_model/sim
+Ecosine_generator
+Z1 w1790424070
+Z2 DPx4 work 8 qpsk_pkg 0 22 PhEd_U1c1E=b2lIK]XKb@2
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z6 8../rtl/cosine_generator.vhd
+Z7 F../rtl/cosine_generator.vhd
+l0
+L6 1
+V7JdzZM33h4EJHZ8DVG^^=1
+!s100 Z[Fz]@Jj[e8gC52MhII`T1
+Z8 OV;C;2020.1;71
+33
+Z9 !s110 1790462610
+!i10b 1
+Z10 !s108 1790462610.000000
+Z11 !s90 -reportprogress|300|-2008|../rtl/cosine_generator.vhd|
+Z12 !s107 ../rtl/cosine_generator.vhd|
+!i113 1
+Z13 o-2008
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+Z15 DEx4 work 16 cosine_generator 0 22 7JdzZM33h4EJHZ8DVG^^=1
+!i122 1
+l20
+L18 25
+V[ajlFl@D:`81Bd`jH5ame0
+!s100 <N@K<ZDl9cEHblCW2^A253
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Elow_pass_filter
+R1
+R2
+R3
+R4
+R5
+!i122 2
+R0
+Z16 8../rtl/low_pass_filter.vhd
+Z17 F../rtl/low_pass_filter.vhd
+l0
+L6 1
+VYAUa4Rn>@0eneVj>RdVjG1
+!s100 ZLfUNIi]@S=IBi9[FV=lD1
+R8
+33
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-2008|../rtl/low_pass_filter.vhd|
+Z19 !s107 ../rtl/low_pass_filter.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z20 DEx4 work 15 low_pass_filter 0 22 YAUa4Rn>@0eneVj>RdVjG1
+!i122 2
+l31
+L20 53
+VZ_?BDDeBcPS1dSZ?[jV2T0
+!s100 L24FIP<oJo3D?ZJ]kXNOf0
+R8
+33
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Eqpsk_demodulator
+Z21 w1790424102
+R2
+R3
+R4
+R5
+!i122 5
+R0
+Z22 8../rtl/qpsk_demodulator.vhd
+Z23 F../rtl/qpsk_demodulator.vhd
+l0
+L6 1
+V>8]N1OUoSkNERK0FD94cA3
+!s100 XVHA2KWMj2k[a4>^X<oY<2
+R8
+33
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-2008|../rtl/qpsk_demodulator.vhd|
+Z25 !s107 ../rtl/qpsk_demodulator.vhd|
+!i113 1
+R13
+R14
+Artl
+R20
+R2
+R3
+R4
+R5
+Z26 DEx4 work 16 qpsk_demodulator 0 22 >8]N1OUoSkNERK0FD94cA3
+!i122 5
+l41
+L31 99
+VSko@TCKiGRCToMP1kH8gZ1
+!s100 E<7Coa61Gi_G745YARe:<3
+R8
+33
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Eqpsk_modulator
+R1
+R2
+R3
+R4
+R5
+!i122 3
+R0
+Z27 8../rtl/qpsk_modulator.vhd
+Z28 F../rtl/qpsk_modulator.vhd
+l0
+L6 1
+Vg^SA0?:XNMh16aM_zocf^3
+!s100 =>Ji[YBki8]CZdNL2O9TK2
+R8
+33
+R9
+!i10b 1
+R10
+Z29 !s90 -reportprogress|300|-2008|../rtl/qpsk_modulator.vhd|
+Z30 !s107 ../rtl/qpsk_modulator.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z31 DEx4 work 14 qpsk_modulator 0 22 g^SA0?:XNMh16aM_zocf^3
+!i122 3
+l27
+L24 53
+Vo0eE7PT5Kok1dQb8JfeC21
+!s100 d9FA>FiC_DHF8ogPZjJ>C2
+R8
+33
+R9
+!i10b 1
+R10
+R29
+R30
+!i113 1
+R13
+R14
+Pqpsk_pkg
+R3
+R4
+R5
+!i122 0
+w1790462483
+R0
+8../rtl/qpsk_pkg.vhd
+F../rtl/qpsk_pkg.vhd
+l0
+L5 1
+VPhEd_U1c1E=b2lIK]XKb@2
+!s100 jD?K0[Q;KQEd_4HlU46n63
+R8
+33
+R9
+!i10b 1
+R10
+!s90 -reportprogress|300|-2008|../rtl/qpsk_pkg.vhd|
+!s107 ../rtl/qpsk_pkg.vhd|
+!i113 1
+R13
+R14
+Eqpsk_system
+Z32 w1790460889
+R2
+R3
+R4
+R5
+!i122 6
+R0
+Z33 8../rtl/qpsk_system.vhd
+Z34 F../rtl/qpsk_system.vhd
+l0
+L6 1
+V_fjzQi[>zM`=6XgC;=9g>0
+!s100 CMbjY;_A1[EF8QW^bDj3O0
+R8
+33
+R9
+!i10b 1
+R10
+Z35 !s90 -reportprogress|300|-2008|../rtl/qpsk_system.vhd|
+Z36 !s107 ../rtl/qpsk_system.vhd|
+!i113 1
+R13
+R14
+Artl
+R26
+Z37 DEx4 work 17 simulated_channel 0 22 N9F<X>liJ=e>29b>RQ9Q33
+R31
+R15
+R2
+R3
+R4
+R5
+Z38 DEx4 work 11 qpsk_system 0 22 _fjzQi[>zM`=6XgC;=9g>0
+!i122 6
+l39
+L31 95
+V]RFaWme9M;n9gK]i`zOzF0
+!s100 f99WdoeS1mUUkK?AMJb??3
+R8
+33
+R9
+!i10b 1
+R10
+R35
+R36
+!i113 1
+R13
+R14
+Esimulated_channel
+R1
+R2
+R3
+R4
+R5
+!i122 4
+R0
+Z39 8../rtl/simulated_channel.vhd
+Z40 F../rtl/simulated_channel.vhd
+l0
+L6 1
+VN9F<X>liJ=e>29b>RQ9Q33
+!s100 `O]lm?mii9T>6cH`PJ[I_3
+R8
+33
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-2008|../rtl/simulated_channel.vhd|
+Z42 !s107 ../rtl/simulated_channel.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+R37
+!i122 4
+l19
+L17 39
+V71E[?VB=>4khg7FjE9?MM2
+!s100 O_LZ8jJCS:kjlz2[<GO>L1
+R8
+33
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R13
+R14
+Etb_qpsk_system
+Z43 w1790462521
+R2
+Z44 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R3
+R4
+R5
+!i122 7
+R0
+Z45 8../tb/tb_qpsk_system.vhd
+Z46 F../tb/tb_qpsk_system.vhd
+l0
+L7 1
+VWMNY<K9[ogPVY2Gj73jjO3
+!s100 g_mgS`4ck1T?bo:0[al0h3
+R8
+33
+Z47 !s110 1790462611
+!i10b 1
+Z48 !s108 1790462611.000000
+Z49 !s90 -reportprogress|300|-2008|../tb/tb_qpsk_system.vhd|
+!s107 ../tb/tb_qpsk_system.vhd|
+!i113 1
+R13
+R14
+Asim
+R38
+R2
+R44
+R3
+R4
+R5
+DEx4 work 14 tb_qpsk_system 0 22 WMNY<K9[ogPVY2Gj73jjO3
+!i122 7
+l40
+L10 133
+V>gNiCdI;T>6k6AACGHDMI3
+!s100 @RiEX:T;M3KRaidb7;ECo1
+R8
+33
+R47
+!i10b 1
+R48
+R49
+Z50 !s107 ../tb/tb_qpsk_system.vhd|
+!i113 1
+R13
+R14
