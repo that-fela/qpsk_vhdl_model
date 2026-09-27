@@ -1,6 +1,7 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use ieee.math_real.all;
 
 package qpsk_pkg is
 
@@ -14,9 +15,13 @@ package qpsk_pkg is
 
     -- 32-bit DDS:
     -- phase_increment = carrier/sample_rate * 2^32
-    constant CARRIER_PHASE_INC : unsigned(31 downto 0) := x"33333333";
+    constant CARRIER_PHASE_INC : unsigned(31 downto 0) :=
+        to_unsigned(
+            integer(round(real(CARRIER_HZ) * (2.0 ** 32) / real(SAMPLE_RATE_HZ))),
+            32
+        );
 
-    -- cos(theta + pi/2) = -sin(theta)
+    -- -sin(theta) = cos(theta + pi/2)
     constant Q_CARRIER_PHASE   : unsigned(31 downto 0) := x"40000000";
 
     constant LUT_BITS : integer := 8;
