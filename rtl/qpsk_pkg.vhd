@@ -6,7 +6,7 @@ use ieee.math_real.all;
 package qpsk_pkg is
 
     constant CLOCK_FREQUENCY_HZ : integer := 100_000_000;
-    constant SAMPLE_RATE_HZ    : integer := 10_000_000;
+    constant SAMPLE_RATE_HZ    : integer := 100_000_000;
     constant CARRIER_HZ        : integer := 2_000_000;
     constant SYMBOL_RATE_HZ    : integer := 100_000;
 
@@ -71,18 +71,54 @@ package qpsk_pkg is
      -6393,-5602,-4808,-4011,-3212,-2410,-1608,-804
     );
 
-    constant FIR_TAPS : integer := 63;
+    constant FIR_TAPS_10_MHZ : integer := 63;
 
     -- 63-tap Hamming-windowed low-pass FIR.
     -- Cutoff is approximately 20 kHz at a 10 MHz sample rate.
     -- Coefficients are Q1.15.
-    type fir_coeff_array_t is array (0 to FIR_TAPS - 1) of integer;
-    constant FIR_COEFFS : fir_coeff_array_t := (
+    type fir_coeff_array_10_mhz_t is array (0 to FIR_TAPS_10_MHZ - 1) of integer;
+    constant FIR_COEFFS_10_MHZ : fir_coeff_array_10_mhz_t := (
          76, 79, 86, 97, 113, 133, 157, 184, 216, 250, 288,
         327,369,413,458,503,549,595,640,683,726,766,804,839,
         871,899,923,943,960,971,978,980,978,971,960,943,923,
         899,871,839,804,766,726,683,640,595,549,503,458,413,
         369,327,288,250,216,184,157,133,113,97,86,79,76
     );
+
+    constant FIR_TAPS_100_MHZ : integer := 255;
+
+    -- 255-tap Hamming-windowed low-pass FIR.
+    -- Cutoff (-6 dB) is 750 kHz at a 100 MHz sample rate.
+    -- Flat passband to ~300 kHz; >= 60 dB stopband attenuation.
+    -- Linear phase, group delay 127 samples (1.27 us).
+    -- Coefficients are Q1.15, sum = 32768 (unity DC gain).
+    type fir_coeff_array_100_mhz_t is array (0 to FIR_TAPS_100_MHZ - 1) of integer;
+    constant FIR_COEFFS_100_MHZ : fir_coeff_array_100_mhz_t := (
+           -2,    -2,    -3,    -3,    -3,    -4,    -4,    -4,    -5,    -5,    -6,
+           -6,    -7,    -7,    -8,    -9,    -9,   -10,   -11,   -12,   -12,   -13,
+          -14,   -15,   -16,   -17,   -18,   -19,   -20,   -20,   -21,   -22,   -23,
+          -24,   -25,   -25,   -26,   -27,   -27,   -28,   -28,   -28,   -29,   -29,
+          -28,   -28,   -28,   -27,   -27,   -26,   -25,   -23,   -22,   -20,   -18,
+          -16,   -14,   -11,    -8,    -5,    -1,     3,     7,    11,    15,    20,
+           26,    31,    37,    43,    49,    56,    63,    70,    78,    85,    93,
+          102,   110,   119,   128,   137,   146,   156,   166,   176,   186,   196,
+          206,   217,   227,   238,   248,   259,   269,   280,   290,   301,   311,
+          321,   332,   342,   351,   361,   370,   380,   389,   397,   406,   414,
+          421,   429,   436,   443,   449,   455,   460,   465,   470,   474,   478,
+          481,   484,   486,   488,   489,   490,   482,   490,   489,   488,   486,
+          484,   481,   478,   474,   470,   465,   460,   455,   449,   443,   436,
+          429,   421,   414,   406,   397,   389,   380,   370,   361,   351,   342,
+          332,   321,   311,   301,   290,   280,   269,   259,   248,   238,   227,
+          217,   206,   196,   186,   176,   166,   156,   146,   137,   128,   119,
+          110,   102,    93,    85,    78,    70,    63,    56,    49,    43,    37,
+           31,    26,    20,    15,    11,     7,     3,    -1,    -5,    -8,   -11,
+          -14,   -16,   -18,   -20,   -22,   -23,   -25,   -26,   -27,   -27,   -28,
+          -28,   -28,   -29,   -29,   -28,   -28,   -28,   -27,   -27,   -26,   -25,
+          -25,   -24,   -23,   -22,   -21,   -20,   -20,   -19,   -18,   -17,   -16,
+          -15,   -14,   -13,   -12,   -12,   -11,   -10,    -9,    -9,    -8,    -7,
+           -7,    -6,    -6,    -5,    -5,    -4,    -4,    -4,    -3,    -3,    -3,
+           -2,    -2
+    );
+
 
 end package;

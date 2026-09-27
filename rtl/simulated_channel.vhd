@@ -20,7 +20,7 @@ architecture rtl of simulated_channel is
     constant Q15_ONE : real := 2.0**15;
 
     constant CHANNEL_GAIN_REAL    : real := 0.1;
-    constant NOISE_AMPLITUDE_REAL : real := 0.05;
+    constant NOISE_AMPLITUDE_REAL : real := 0.8;
 
     constant CHANNEL_GAIN_Q15    : q15_t := to_signed(integer(CHANNEL_GAIN_REAL    * Q15_ONE), 16);
     constant NOISE_AMPLITUDE_Q15 : q15_t := to_signed(integer(NOISE_AMPLITUDE_REAL * Q15_ONE), 16);

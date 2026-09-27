@@ -22,7 +22,7 @@ architecture rtl of low_pass_filter is
     constant COEFF_WIDTH : integer := 16;
     constant ACC_WIDTH   : integer := 48;
 
-    type delay_array_t is array (0 to FIR_TAPS - 2) of
+    type delay_array_t is array (0 to FIR_TAPS_100_MHZ - 2) of
         signed(INPUT_WIDTH - 1 downto 0);
 
     signal delay_line : delay_array_t := (others => (others => '0'));
@@ -46,21 +46,21 @@ begin
 
                 acc := (others => '0');
 
-                for k in 0 to FIR_TAPS - 1 loop
+                for k in 0 to FIR_TAPS_100_MHZ - 1 loop
                     if k = 0 then
                         x := sample_in;
                     else
                         x := delay_line(k - 1);
                     end if;
 
-                    prod := x * to_signed(FIR_COEFFS(k), COEFF_WIDTH);
+                    prod := x * to_signed(FIR_COEFFS_100_MHZ(k), COEFF_WIDTH);
                     acc := acc + resize(prod, ACC_WIDTH);
                 end loop;
 
                 -- Coefficients are Q1.15.
                 output_reg <= resize(shift_right(acc, 15), OUTPUT_WIDTH);
 
-                for k in FIR_TAPS - 2 downto 1 loop
+                for k in FIR_TAPS_100_MHZ - 2 downto 1 loop
                     delay_line(k) <= delay_line(k - 1);
                 end loop;
 
